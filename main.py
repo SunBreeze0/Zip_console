@@ -73,17 +73,6 @@ while True:
             print(f"Директория '{dir_to_remove}' удалена.")
             files_in_zip = files_to_keep
 
-    elif command.startswith('cat '):
-        path = current_dir + command.split()[1]
-        try:
-            with zipfile.ZipFile(vfs_path, 'r') as myzip:
-                content = myzip.read(path).decode('utf-8')
-                print(content)
-        except KeyError:
-            print("Файл не найден.")
-        except UnicodeDecodeError:
-            print("Ошибка кодировки: файл не в UTF-8.")
-
     elif command == 'cal':
         now = datetime.now()
         print(calendar.month(now.year, now.month))
