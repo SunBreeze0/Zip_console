@@ -154,20 +154,6 @@ while True:
         except Exception as e:
             log_action("rmdir", [dir_to_remove], f"Error: {str(e)}")
 
-    elif command.startswith('cat '):
-        path = current_dir + command.split()[1]
-        try:
-            with zipfile.ZipFile(vfs_path, 'r') as myzip:
-                content = myzip.read(path).decode('utf-8')  # Декодирование в UTF-8
-                print(content)
-                log_action("cat", [path], "Success")
-        except KeyError:
-            print("Файл не найден.")
-            log_action("cat", [path], "File not found")
-        except UnicodeDecodeError:
-            print("Ошибка кодировки: файл не в UTF-8.")
-            log_action("cat", [path], "Unicode decode error")
-
     else:
         print("Команда не найдена.")
         log_action(command, [], "Command not found")
