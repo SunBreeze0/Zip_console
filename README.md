@@ -42,18 +42,18 @@
 ```
 <?xml version="1.0" ?>
 <log>
-  <action>
-    <timestamp>2024-11-25 11:43:25.518473</timestamp>
-    <command>ls</command>
-    <parameters>None</parameters>
-    <result>Success</result>
-  </action>
-  <action>
-    <timestamp>2024-11-25 11:43:32.289779</timestamp>
-    <command>cd</command>
-    <parameters>['deskk']</parameters>
-    <result>Success</result>
-  </action>
+<action>
+<timestamp>2024-11-25 11:43:25.518473</timestamp>
+<command>ls</command>
+<parameters>None</parameters>
+<result>Success</result>
+</action>
+<action>
+<timestamp>2024-11-25 11:43:32.289779</timestamp>
+<command>cd</command>
+<parameters>['deskk']</parameters>
+<result>Success</result>
+</action>
 </log>
 ```
 
