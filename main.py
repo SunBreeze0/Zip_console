@@ -3,7 +3,6 @@ import calendar
 from datetime import datetime
 import xml.etree.ElementTree as ET
 import os
-from xml.dom import minidom
 
 vfs_path = 'files.zip'
 computer_name = 'MyComputer'
@@ -55,13 +54,13 @@ def log_action(command, parameters, result):
     except Exception as e:
         print(f"Error logging action: {str(e)}")
 
-# Чтение всех файлов из архива в память
 def read_zip():
+    """Чтение всех файлов из архива в память."""
     with zipfile.ZipFile(vfs_path, 'r') as myzip:
         return myzip.namelist()
 
-# Запись в архив
 def write_zip(files_to_write):
+    """Запись в архив."""
     with zipfile.ZipFile(vfs_path, 'w') as myzip:
         for file in files_to_write:
             myzip.write(file, arcname=file)
@@ -78,18 +77,13 @@ while True:
 
     if command == 'ls':
         try:
-            # Множество для уникальных файлов и папок
             unique_files = set()
-
-            # Перебираем все файлы и папки в архиве
             for name in files_in_zip:
                 # Если имя начинается с текущей директории, это файл/папка в текущей директории
                 if name.startswith(current_dir):
-                    # Отделяем только первую папку/файл после текущей директории
                     name_in_current_dir = name[len(current_dir):].split('/')[0]
                     if name_in_current_dir.strip():
                         unique_files.add(name_in_current_dir)
-
             # Выводим уникальные имена файлов и папок
             if unique_files:
                 for file in unique_files:
