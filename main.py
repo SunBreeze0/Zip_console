@@ -60,10 +60,14 @@ def read_zip():
         return myzip.namelist()
 
 def write_zip(files_to_write):
-    """Запись в архив."""
     with zipfile.ZipFile(vfs_path, 'w') as myzip:
         for file in files_to_write:
-            myzip.write(file, arcname=file)
+            if file.endswith('/'):
+                zinfo = zipfile.ZipInfo(file)
+                zinfo.external_attr = 0o40775 << 16
+                myzip.writestr(zinfo, '')
+            else:
+                myzip.writestr(file, '')
 
 # Загружаем все файлы из архива в память
 files_in_zip = read_zip()
@@ -138,11 +142,11 @@ while True:
             dir_path = current_dir + dir_to_remove + '/'
             # Проверка, пуста ли директория
             files_in_dir = [name for name in files_in_zip if name.startswith(dir_path)]
-            if files_in_dir:
+            if any('/' in name[len(dir_path):] for name in files_in_dir):
                 print(f"Директория '{dir_to_remove}' не пуста.")
                 log_action("rmdir", [dir_to_remove], "Directory not empty")
             else:
-                # Создаем новый архив без этой директории
+                # Создаем новый список файлов без этой директории
                 files_to_keep = [file for file in files_in_zip if not file.startswith(dir_path)]
                 # Перезаписываем архив без удаленной директории
                 write_zip(files_to_keep)

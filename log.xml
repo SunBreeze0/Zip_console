@@ -5,4 +5,298 @@
 <parameters>[]</parameters>
 <result>Success</result>
 </action>
+<action>
+<timestamp>2024-11-25 13:05:01.325024</timestamp>
+<command>ды</command>
+<parameters>[]</parameters>
+<result>Command not found</result>
+</action>
+<action>
+<timestamp>2024-11-25 13:05:02.327635</timestamp>
+<command>s</command>
+<parameters>[]</parameters>
+<result>Command not found</result>
+</action>
+<action>
+<timestamp>2024-11-25 13:05:03.288159</timestamp>
+<command>ls</command>
+<parameters>[]</parameters>
+<result>Success</result>
+</action>
+<action>
+<timestamp>2024-11-25 13:05:05.590363</timestamp>
+<command>cd</command>
+<parameters>['deskk']</parameters>
+<result>Success</result>
+</action>
+<action>
+<timestamp>2024-11-25 13:05:11.667404</timestamp>
+<command>cd</command>
+<parameters>['12']</parameters>
+<result>Success</result>
+</action>
+<action>
+<timestamp>2024-11-25 13:05:13.805547</timestamp>
+<command>cd</command>
+<parameters>['123']</parameters>
+<result>Success</result>
+</action>
+<action>
+<timestamp>2024-11-25 13:05:15.416658</timestamp>
+<command>ls -</command>
+<parameters>[]</parameters>
+<result>Command not found</result>
+</action>
+<action>
+<timestamp>2024-11-25 13:10:58.145539</timestamp>
+<command>ls</command>
+<parameters>[]</parameters>
+<result>Success</result>
+</action>
+<action>
+<timestamp>2024-11-25 13:13:07.317398</timestamp>
+<command>ls</command>
+<parameters>[]</parameters>
+<result>Success</result>
+</action>
+<action>
+<timestamp>2024-12-02 10:50:11.040290</timestamp>
+<command>ls</command>
+<parameters>[]</parameters>
+<result>Success</result>
+</action>
+<action>
+<timestamp>2024-12-02 10:50:14.313569</timestamp>
+<command>cd</command>
+<parameters>['deskk']</parameters>
+<result>Success</result>
+</action>
+<action>
+<timestamp>2024-12-02 10:50:15.275013</timestamp>
+<command>ls</command>
+<parameters>[]</parameters>
+<result>Success</result>
+</action>
+<action>
+<timestamp>2024-12-02 10:50:17.204179</timestamp>
+<command>cd</command>
+<parameters>['12']</parameters>
+<result>Success</result>
+</action>
+<action>
+<timestamp>2024-12-02 10:50:18.358796</timestamp>
+<command>ls</command>
+<parameters>[]</parameters>
+<result>Success</result>
+</action>
+<action>
+<timestamp>2024-12-02 10:50:19.735108</timestamp>
+<command>cd</command>
+<parameters>['12']</parameters>
+<result>Directory not found</result>
+</action>
+<action>
+<timestamp>2024-12-02 10:50:22.308966</timestamp>
+<command>cd</command>
+<parameters>['123']</parameters>
+<result>Success</result>
+</action>
+<action>
+<timestamp>2024-12-02 10:50:23.267452</timestamp>
+<command>ls</command>
+<parameters>[]</parameters>
+<result>No files/folders found</result>
+</action>
+<action>
+<timestamp>2024-12-02 10:50:29.025985</timestamp>
+<command>rmdir</command>
+<parameters>['123']</parameters>
+<result>Directory not empty</result>
+</action>
+<action>
+<timestamp>2024-12-02 10:50:34.891010</timestamp>
+<command>ls</command>
+<parameters>[]</parameters>
+<result>Success</result>
+</action>
+<action>
+<timestamp>2024-12-02 10:50:39.377778</timestamp>
+<command>rmdir</command>
+<parameters>['123']</parameters>
+<result>Directory not empty</result>
+</action>
+<action>
+<timestamp>2024-12-02 10:50:47.135547</timestamp>
+<command>cd</command>
+<parameters>['123']</parameters>
+<result>Success</result>
+</action>
+<action>
+<timestamp>2024-12-02 10:50:51.274330</timestamp>
+<command>rmdir</command>
+<parameters>['123']</parameters>
+<result>Error: [WinError 3] Системе не удается найти указанный путь: 'deskk/12/'</result>
+</action>
+<action>
+<timestamp>2024-12-02 10:50:55.234476</timestamp>
+<command>ls</command>
+<parameters>[]</parameters>
+<result>Success</result>
+</action>
+<action>
+<timestamp>2024-12-02 10:57:25.611560</timestamp>
+<command>ls</command>
+<parameters>[]</parameters>
+<result>Success</result>
+</action>
+<action>
+<timestamp>2024-12-02 10:57:29.734906</timestamp>
+<command>cd</command>
+<parameters>['deskk']</parameters>
+<result>Success</result>
+</action>
+<action>
+<timestamp>2024-12-02 10:57:31.718872</timestamp>
+<command>ls</command>
+<parameters>[]</parameters>
+<result>Success</result>
+</action>
+<action>
+<timestamp>2024-12-02 10:57:33.423530</timestamp>
+<command>cd</command>
+<parameters>['12']</parameters>
+<result>Success</result>
+</action>
+<action>
+<timestamp>2024-12-02 10:57:34.075474</timestamp>
+<command>ls</command>
+<parameters>[]</parameters>
+<result>Success</result>
+</action>
+<action>
+<timestamp>2024-12-02 10:57:38.004890</timestamp>
+<command>rmdir</command>
+<parameters>['123']</parameters>
+<result>Directory not empty</result>
+</action>
+<action>
+<timestamp>2024-12-02 10:57:43.251790</timestamp>
+<command>cd</command>
+<parameters>['123']</parameters>
+<result>Success</result>
+</action>
+<action>
+<timestamp>2024-12-02 10:57:45.802909</timestamp>
+<command>rmdir</command>
+<parameters>['123']</parameters>
+<result>Directory removed successfully</result>
+</action>
+<action>
+<timestamp>2024-12-02 10:57:49.440880</timestamp>
+<command>ls</command>
+<parameters>[]</parameters>
+<result>Success</result>
+</action>
+<action>
+<timestamp>2024-12-02 10:59:37.677105</timestamp>
+<command>ls</command>
+<parameters>[]</parameters>
+<result>Success</result>
+</action>
+<action>
+<timestamp>2024-12-02 10:59:39.775085</timestamp>
+<command>cd</command>
+<parameters>['deskk']</parameters>
+<result>Success</result>
+</action>
+<action>
+<timestamp>2024-12-02 10:59:42.205239</timestamp>
+<command>ls</command>
+<parameters>[]</parameters>
+<result>Success</result>
+</action>
+<action>
+<timestamp>2024-12-02 10:59:43.772949</timestamp>
+<command>cd</command>
+<parameters>['12']</parameters>
+<result>Success</result>
+</action>
+<action>
+<timestamp>2024-12-02 10:59:44.426763</timestamp>
+<command>ls</command>
+<parameters>[]</parameters>
+<result>Success</result>
+</action>
+<action>
+<timestamp>2024-12-02 10:59:48.793738</timestamp>
+<command>rmdir</command>
+<parameters>['123']</parameters>
+<result>Directory removed successfully</result>
+</action>
+<action>
+<timestamp>2024-12-02 10:59:50.470007</timestamp>
+<command>ls</command>
+<parameters>[]</parameters>
+<result>No files/folders found</result>
+</action>
+<action>
+<timestamp>2024-12-02 10:59:53.272524</timestamp>
+<command>ls</command>
+<parameters>[]</parameters>
+<result>Success</result>
+</action>
+<action>
+<timestamp>2024-12-02 10:59:55.704957</timestamp>
+<command>cd</command>
+<parameters>['12']</parameters>
+<result>Success</result>
+</action>
+<action>
+<timestamp>2024-12-02 10:59:58.117299</timestamp>
+<command>ls</command>
+<parameters>[]</parameters>
+<result>No files/folders found</result>
+</action>
+<action>
+<timestamp>2024-12-02 11:01:46.603793</timestamp>
+<command>ls</command>
+<parameters>[]</parameters>
+<result>Success</result>
+</action>
+<action>
+<timestamp>2024-12-02 11:01:51.493344</timestamp>
+<command>cd</command>
+<parameters>['deskk']</parameters>
+<result>Success</result>
+</action>
+<action>
+<timestamp>2024-12-02 11:01:53.144376</timestamp>
+<command>ls</command>
+<parameters>[]</parameters>
+<result>Success</result>
+</action>
+<action>
+<timestamp>2024-12-02 11:01:54.232500</timestamp>
+<command>cd</command>
+<parameters>['12']</parameters>
+<result>Success</result>
+</action>
+<action>
+<timestamp>2024-12-02 11:01:54.931305</timestamp>
+<command>ls</command>
+<parameters>[]</parameters>
+<result>Success</result>
+</action>
+<action>
+<timestamp>2024-12-02 11:01:59.950488</timestamp>
+<command>rmdir</command>
+<parameters>['123']</parameters>
+<result>Directory removed successfully</result>
+</action>
+<action>
+<timestamp>2024-12-02 11:02:01.314602</timestamp>
+<command>ls</command>
+<parameters>[]</parameters>
+<result>No files/folders found</result>
+</action>
 </log>
